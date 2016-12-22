@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>错别字检查Django演示首页</title>
+</head>
+<body>
+
+首页
+
+
+<form action="http://www.cuobiezi.net/comm/cuobiezi/poc_check" method="post">
+    <table>
+        <tr>
+            <td>内容：</td>
+            <td>
+                <textarea cols="60" rows="10" name="content">
+
+1.将“中华人民共和国”错写成“中华人名共和国”，将“人大常委会”错写成“大人常委会”等；
+2.将“中国共产党”错写成“中国共产常”等；
+3.将“祖国万岁”错写成“祖国万死”等；
+4.将“科学发展观”错写成“科学发展现”等；
+5.将“社会主义”错写成“杜会主义”等；
+6.将“反腐倡廉”错写成“友腐倡廉”等；
+7.将“扶贫”错写成“扶贪”等；
+8.将“严禁公款吃喝”错写成“严谨公款吃喝”等；
+9.将“政务公开领导小组”错写成“政务公开领导小姐”等。
+
+                </textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>公司名称：</td>
+            <td><input type="text" name="company_name" value="测试名称有限公司"></td>
+        </tr>
+        <tr>
+            <td>
+                文章类型：
+            </td>
+            <td>
+              <select name="doc_type">
+                    <option value="common">通用</option>
+                    <option value="personal">个人体会感想</option>
+                    <option value="introduction">说明书</option>
+                    <option value="gov">政府公文</option>
+                    <option value="law">合同、法律文书</option>
+                    <option value="company">企业文书</option>
+                </select>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <button type="submit">提交</button>
+            </td>
+
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
